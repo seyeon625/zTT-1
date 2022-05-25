@@ -78,21 +78,7 @@ class DQNAgent:
 			self.epsilon_start = 0.1
 		
 
-#	def get_flops(model):
-#		run_meta = tf.RunMetadata()
-#		opts = tf.profiler.ProfileOptionBuilder.float_operation()
 
-		# We use the Keras session graph in the call to the profiler.
-#		flops = tf.profiler.profile(graph=K.get_session().graph,
-#		run_meta=run_meta, cmd='op', options=opts)
-		        
-
-#		return flops.total_float_ops  # Prints the "flops" of the model.
-
-
-# .... Define your model here ....
-                
-	
 	def optimizer(self):
 		a = K.placeholder(shape=(None,), dtype='int32')
 		y = K.placeholder(shape=(None,), dtype='float32')
